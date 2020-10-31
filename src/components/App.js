@@ -3,7 +3,7 @@ import "./../styles/App.css";
 import ToDo from "./toDo";
 import SubmitForm from "./submitForm";
 function App() {
-  const tasks = ["task1", "task2", "task3"];
+  const tasks = [];
   const [task, setTask] = React.useState(tasks);
 
   const handleDelete = (index) => {
