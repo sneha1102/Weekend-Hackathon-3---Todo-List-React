@@ -2,7 +2,7 @@ import React from "react";
 import "./styles.css";
 import TodoList from "./toDoList";
 import { TextField, Button } from "@material-ui/core";
-export default function SubmitForm(props) {
+function SubmitForm(props) {
   const [currTask, setCurrTask] = React.useState("");
   return (
     <div className="App ">
@@ -30,3 +30,4 @@ export default function SubmitForm(props) {
     </div>
   );
 }
+export default SubmitForm;

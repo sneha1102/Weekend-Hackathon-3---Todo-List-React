@@ -1,8 +1,7 @@
 import React from "react";
 import "./styles.css";
 import TodoList from "./toDoList";
-
-export default function ToDo(props) {
+function ToDo(props) {
   return (
     <div className="App">
       {props.tasks.map((todo, index) => (
@@ -18,3 +17,4 @@ export default function ToDo(props) {
     </div>
   );
 }
+export default ToDo;

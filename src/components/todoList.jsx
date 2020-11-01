@@ -8,7 +8,7 @@ import DialogContent from "@material-ui/core/DialogContent";
 import DialogContentText from "@material-ui/core/DialogContentText";
 import DialogTitle from "@material-ui/core/DialogTitle";
 import { Button, List, ListItem, ListItemText } from "@material-ui/core";
-export default function ToDoList(props) {
+function TodoList(props) {
   const [open, setOpen] = React.useState(false);
   const [currTask, setCurrTask] = React.useState(props.content);
 
@@ -76,3 +76,4 @@ export default function ToDoList(props) {
     </div>
   );
 }
+export default TodoList;
