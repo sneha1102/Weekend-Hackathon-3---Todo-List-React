@@ -26,7 +26,7 @@ export default function ToDoList(props) {
     setOpen(false);
   };
   return (
-    <div className="App container">
+    <div>
       <ListItemText primary={props.content} />
 
       <Button
