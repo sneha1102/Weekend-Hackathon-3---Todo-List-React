@@ -6,29 +6,27 @@ function SubmitForm(props) {
   const [currTask, setCurrTask] = React.useState("");
   return (
     <div className="main ">
-      <form>
-        <textarea
-          id="task"
-          // variant="outlined"
-          placeholder="add task...."
-          value={currTask}
-          onChange={(event) => setCurrTask(event.target.value)}
-        />
-        <Button
-          id="btn"
-          variant="contained"
-          color="secondary"
-          onClick={(event) => {
-            event.preventDefault();
-            if (currTask !== "") {
-              props.onSave(currTask);
-              setCurrTask("");
-            }
-          }}
-        >
-          Add
-        </Button>
-      </form>
+      <textarea
+        id="task"
+        // variant="outlined"
+        placeholder="add task...."
+        value={currTask}
+        onChange={(event) => setCurrTask(event.target.value)}
+      />
+      <Button
+        id="btn"
+        variant="contained"
+        color="secondary"
+        onClick={(event) => {
+          event.preventDefault();
+          if (currTask !== "") {
+            props.onSave(currTask);
+            setCurrTask("");
+          }
+        }}
+      >
+        Add
+      </Button>
     </div>
   );
 }
