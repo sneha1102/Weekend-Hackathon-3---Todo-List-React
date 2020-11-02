@@ -3,7 +3,7 @@ import "./../styles/App.css";
 import TodoList from "./todoList";
 function ToDo(props) {
   return (
-    <div className="App">
+    <div className="main">
       {props.tasks.map((todo, index) => (
         <TodoList
           className="list"

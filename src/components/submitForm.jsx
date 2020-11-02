@@ -5,7 +5,7 @@ import { TextField, Button } from "@material-ui/core";
 function SubmitForm(props) {
   const [currTask, setCurrTask] = React.useState("");
   return (
-    <div className="App ">
+    <div className="main ">
       <form>
         <TextField
           id="task"
