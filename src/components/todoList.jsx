@@ -1,5 +1,5 @@
 import React from "react";
-import "./styles.css";
+import "./../styles/App.css";
 
 import TextField from "@material-ui/core/TextField";
 import Dialog from "@material-ui/core/Dialog";

@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-import TodoList from "./toDoList";
+import "./../styles/App.css";
+import TodoList from "./todoList";
 function ToDo(props) {
   return (
     <div className="App">

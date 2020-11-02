@@ -1,6 +1,6 @@
 import React from "react";
-import "./styles.css";
-import TodoList from "./toDoList";
+import "./../styles/App.css";
+
 import { TextField, Button } from "@material-ui/core";
 function SubmitForm(props) {
   const [currTask, setCurrTask] = React.useState("");
