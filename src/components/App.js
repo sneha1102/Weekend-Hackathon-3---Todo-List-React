@@ -3,7 +3,6 @@ import "./../styles/App.css";
 import ToDo from "./toDo";
 import { Button } from "@material-ui/core";
 
-import SubmitForm from "./submitForm";
 function App() {
   const tasks = [];
   const [task, setTask] = React.useState(tasks);
