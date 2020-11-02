@@ -1,6 +1,7 @@
 import React from "react";
 import "./../styles/App.css";
 import ToDo from "./toDo";
+
 import SubmitForm from "./submitForm";
 function App() {
   const tasks = [];
@@ -13,10 +14,12 @@ function App() {
     setTask(arrCopy);
   };
   const handleSubmit = (currTask) => {
-    const arrCopy = [...task];
-    arrCopy.push(currTask);
-    //console.log(currTask);
-    setTask(arrCopy);
+    if (currTask !== "") {
+      const arrCopy = [...task];
+      arrCopy.push(currTask);
+
+      setTask(arrCopy);
+    }
   };
   const handleSave = (currTask, index) => {
     let arrCopy = [...task];

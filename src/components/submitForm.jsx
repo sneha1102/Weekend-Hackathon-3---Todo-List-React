@@ -1,15 +1,15 @@
 import React from "react";
 import "./../styles/App.css";
-
+import Textarea from "@material-ui/core";
 import { TextField, Button } from "@material-ui/core";
 function SubmitForm(props) {
   const [currTask, setCurrTask] = React.useState("");
   return (
     <div className="main ">
       <form>
-        <TextField
+        <textarea
           id="task"
-          variant="outlined"
+          // variant="outlined"
           placeholder="add task...."
           value={currTask}
           onChange={(event) => setCurrTask(event.target.value)}
@@ -20,8 +20,10 @@ function SubmitForm(props) {
           color="secondary"
           onClick={(event) => {
             event.preventDefault();
-            props.onSave(currTask);
-            setCurrTask("");
+            if (currTask !== "") {
+              props.onSave(currTask);
+              setCurrTask("");
+            }
           }}
         >
           Add
