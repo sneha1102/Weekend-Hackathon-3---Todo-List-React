@@ -30,6 +30,7 @@ function TodoList(props) {
       <ListItemText primary={props.content} />
 
       <Button
+        className="delete"
         variant="contained"
         color="primary"
         onClick={() => props.onDelete(props.id)}
@@ -37,7 +38,12 @@ function TodoList(props) {
         Delete
       </Button>
 
-      <Button variant="contained" color="primary" onClick={handleClickOpen}>
+      <Button
+        variant="contained"
+        className="edit"
+        color="primary"
+        onClick={handleClickOpen}
+      >
         Edit
       </Button>
       <Dialog
@@ -48,6 +54,7 @@ function TodoList(props) {
         <DialogTitle id="form-dialog-title">Edit Task </DialogTitle>
         <DialogContent>
           <TextField
+            className="editTask"
             autoFocus
             margin="dense"
             id={props.id}
@@ -62,6 +69,7 @@ function TodoList(props) {
             Cancel
           </Button>
           <Button
+            className="saveTask"
             onClick={(event) => {
               handleSave(event);
               handleClose();
